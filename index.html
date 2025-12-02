@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freundes-Video</title>
+    <title>1.K.C. Lüttringhausen</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #000;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #000;
         }
-        iframe {
-            width: 80%;
-            height: 80%;
+
+        video {
+            width: auto;
+            height: 75vh; /* ca. 3/4 der Bildschirmhöhe */
+            max-width: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://www.youtube.com/embed/szN1EGHB52s?autoplay=1&mute=1" 
-        title="Hangover - We Are Back Baby  ↟Edit↡  ♪Midnight City♪" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen
-        allow="autoplay; encrypted-media">
-    </iframe>
+    <video autoplay controls loop>
+        <source src="video.mp4" type="video/mp4">
+        Dein Browser unterstützt das Video-Tag nicht.
+    </video>
 </body>
 </html>
